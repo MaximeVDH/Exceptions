@@ -56,7 +56,7 @@ namespace FoutenAfhandeling.Wpf
                     int som = TelPositieveGetallenOp(getal1, getal2);
                     resultaat = som.ToString();
                 }
-
+                // dit is een test
             }
 
             catch(FormatException fEx)
