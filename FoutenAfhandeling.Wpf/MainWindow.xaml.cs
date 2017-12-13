@@ -71,6 +71,7 @@ namespace FoutenAfhandeling.Wpf
                 errorMessage = "Door 0 delen gaat niet!.\n";
                 errorMessage += "Details " + sEx.Message + "\n";
                 errorTextBlock.Text = errorMessage;
+
             }
 
             catch (Exception gEx)
