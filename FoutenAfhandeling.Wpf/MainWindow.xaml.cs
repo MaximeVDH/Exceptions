@@ -66,15 +66,19 @@ namespace FoutenAfhandeling.Wpf
                                 errorTextBlock.Text = errorMessage;
             }
 
+            catch(DivideByZeroException sEx)
+            {
+                errorMessage = "Door 0 delen gaat niet!.\n";
+                errorMessage += "Details " + sEx.Message + "\n";
+                errorTextBlock.Text = errorMessage;
+            }
+
             catch (Exception gEx)
             {
                 errorMessage = "Er is een fout opgetreden\n";
                 errorMessage += "Details " + gEx.Message + "\n";
                 errorTextBlock.Text = errorMessage;
             }
-
-
-
 
             return resultaat;
         }
