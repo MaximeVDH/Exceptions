@@ -81,6 +81,11 @@ namespace FoutenAfhandeling.Wpf
                 errorTextBlock.Text = errorMessage;
             }
 
+            finally
+            {
+                Console.WriteLine("Laaste uitvoeren : " + DateTime.Now.ToString("dd/MM/yy"));
+            }
+
             return resultaat;
         }
 
